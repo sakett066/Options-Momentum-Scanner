@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.10'
       - name: Install packages
-        run: pip install nsetools requests
+        run: pip install nsetools requests numpy
       - name: Run Options Scanner
         env:
           TELEGRAM_OPTIONS_BOT_TOKEN: ${{ secrets.TELEGRAM_OPTIONS_BOT_TOKEN }}
